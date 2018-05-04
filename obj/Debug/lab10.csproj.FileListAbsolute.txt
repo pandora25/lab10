@@ -1,0 +1,7 @@
+c:\users\mcyal\source\repos\lab10\lab10\bin\Debug\lab10.exe.config
+c:\users\mcyal\source\repos\lab10\lab10\bin\Debug\lab10.exe
+c:\users\mcyal\source\repos\lab10\lab10\bin\Debug\lab10.pdb
+c:\users\mcyal\source\repos\lab10\lab10\obj\Debug\lab10.csprojResolveAssemblyReference.cache
+c:\users\mcyal\source\repos\lab10\lab10\obj\Debug\lab10.csproj.CoreCompileInputs.cache
+c:\users\mcyal\source\repos\lab10\lab10\obj\Debug\lab10.exe
+c:\users\mcyal\source\repos\lab10\lab10\obj\Debug\lab10.pdb
