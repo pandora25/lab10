@@ -16,20 +16,15 @@ namespace lab10
             while (repeat)
             {
                 count++;
-                Console.Write("enter Radius ?");
+                Console.Write("Enter Radius ?");
                 double radius = double.Parse(Console.ReadLine());
-                           
                 Circule objects = new Circule(radius);
-
                 Console.WriteLine($"Circumference:{objects.CalculateCircumference()}\n");
-
                 Console.WriteLine($"Area:{objects.CalculateArea()}\n");
-
                 repeat = Confirmation("Continue? (y/n)");
             }
             Console.WriteLine($"You Created {count} Circule Object");
         }
-
         //method for y or n
         public static bool Confirmation(string message)
         {
@@ -38,22 +33,10 @@ namespace lab10
             while ((!Regex.IsMatch(input1, @"^[n|y]$")))
             {
                 Console.WriteLine("invalid entery please enter the 'y' or 'n')");
-                input1 = Console.ReadLine();
+                input1 = Console.ReadLine().ToLower();
             }
             return input1 == "y";
         }
-
-        //method for is the string number between 0-9
-        //public static double RadiusConfirmation(string message)
-        //{
-        //    Console.WriteLine(message);
-        //    string input = Console.ReadLine();
-        //    while ((!Regex.IsMatch(input, @"^[0-9]{1,30}$")))
-        //    {
-        //        Console.WriteLine("invalid entery please enter the 'y' or 'n')");
-        //        input = Console.ReadLine();
-        //    }
-        //    return input;
-        //}
     }
 }
+
