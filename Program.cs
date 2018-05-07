@@ -16,26 +16,26 @@ namespace lab10
             while (repeat)
             {
                 count++;
-                Console.Write("Enter Radius ?");
+                Console.Write("Enter Radius ? ");
                 double radius = double.Parse(Console.ReadLine());
                 Circule objects = new Circule(radius);
-                Console.WriteLine($"Circumference:{objects.CalculateCircumference()}\n");
-                Console.WriteLine($"Area:{objects.CalculateArea()}\n");
-                repeat = Confirmation("Continue? (y/n)");
+                Console.WriteLine($"Circumference:{objects.CalculateFormattedeCircumference()} \n");
+                Console.WriteLine($"Area:{objects.CalculateFormattedArea()} \n");
+                repeat = Confirmation(" Continue? (y/n) ");
             }
             Console.WriteLine($"You Created {count} Circule Object");
         }
         //method for y or n
         public static bool Confirmation(string message)
         {
-            Console.WriteLine(message);
+            Console.Write(message);
             string input1 = Console.ReadLine().ToLower();
             while ((!Regex.IsMatch(input1, @"^[n|y]$")))
             {
                 Console.WriteLine("invalid entery please enter the 'y' or 'n')");
                 input1 = Console.ReadLine().ToLower();
             }
-            return input1 == "y";
+            return (input1 == "y");
         }
     }
 }

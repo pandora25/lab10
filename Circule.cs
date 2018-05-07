@@ -8,7 +8,9 @@ namespace lab10
 {
     class Circule
     {
+        //create a variable 
         private double radius;
+
         // constractor
         public Circule(double radius)
         {
@@ -20,7 +22,6 @@ namespace lab10
         }
         // propertes 
         public double Radius
-
         {
             set
             {
@@ -31,18 +32,30 @@ namespace lab10
                 return radius;
             }
         }
-       // creat  two methods
-       //1.
+        // creat  two methods
+        //1.
         public double CalculateCircumference()
         {
             double circumference = Math.PI * 2 * radius;
             return circumference;
         }
         //2.
+        public string CalculateFormattedeCircumference()
+        {
+            string formated = $"{CalculateCircumference(),0:N2}";
+            return formated;
+        }
+        //3.
         public double CalculateArea()
         {
             double area = Math.PI * (radius * radius);
             return area;
+        }
+        //4.
+        public string CalculateFormattedArea()
+        {
+            string formated = $"{CalculateArea(),0:N2}";
+            return formated;
         }
     }
 }
